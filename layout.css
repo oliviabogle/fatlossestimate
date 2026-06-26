@@ -1,0 +1,64 @@
+/* layout.css
+   Header, container, section labels, and responsive grid utilities. */
+
+@import './variables.css';
+
+/* ── Header ── */
+
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 28px 32px 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+header h1 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+header .badge {
+  font-family: var(--mono);
+  font-size: .75rem;
+  color: var(--green);
+  background: var(--green-glow);
+  border: 1px solid var(--green-dim);
+  padding: 2px 10px;
+  border-radius: 999px;
+}
+
+/* ── Container ── */
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Section labels ── */
+
+.section-label {
+  font-family: var(--mono);
+  font-size: .68rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  margin-bottom: 14px;
+  padding-top: 36px;
+}
+
+/* ── Grid utilities ── */
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+
+/* ── Responsive ── */
+
+@media (max-width: 620px) {
+  .grid-2,
+  .grid-3     { grid-template-columns: 1fr; }
+  header      { flex-direction: column; gap: 8px; }
+}

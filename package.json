@@ -1,0 +1,16 @@
+{
+  "name": "fat-loss-tracker",
+  "version": "1.0.0",
+  "description": "Data-driven fat loss calculator using MFP calorie logs and step counts. Filters out water weight noise to show real deficit-based fat burned.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "lint":  "npx eslint src/js/**/*.js"
+  },
+  "keywords": ["fitness", "fat-loss", "calories", "myfitnesspal", "tdee", "bmr"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

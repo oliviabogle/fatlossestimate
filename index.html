@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fat Loss Tracker</title>
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/layout.css" />
+  <link rel="stylesheet" href="src/css/forms.css" />
+  <link rel="stylesheet" href="src/css/log.css" />
+  <link rel="stylesheet" href="src/css/results.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Fat Loss Tracker</h1>
+    <span class="badge">Data-driven · Noise-filtered</span>
+  </header>
+
+  <div class="container">
+
+    <!-- ── Body stats ── -->
+    <div class="section-label">Your body stats</div>
+    <div class="grid-3" style="margin-bottom: 10px;">
+      <div class="card">
+        <label>Sex assigned at birth</label>
+        <select id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="card">
+        <label>Age</label>
+        <input type="number" id="age" placeholder="30" min="14" max="99" />
+      </div>
+      <div class="card">
+        <label>Units</label>
+        <select id="units">
+          <option value="lbs">Pounds / inches</option>
+          <option value="kg">Kilograms / cm</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <label id="wLabel">Weight (lbs)</label>
+        <input type="number" id="weight" placeholder="185" step="0.1" />
+      </div>
+      <div class="card">
+        <label id="hLabel">Height (inches)</label>
+        <input type="number" id="height" placeholder="70" step="0.5" />
+        <div class="hint">5′10″ = 70 inches</div>
+      </div>
+    </div>
+
+    <!-- ── Daily log ── -->
+    <div class="section-label">Daily log — paste your MyFitnessPal + watch totals</div>
+    <div class="log-card">
+      <div class="log-header">
+        <span>Day</span>
+        <span>Calories eaten<br /><small>from MFP</small></span>
+        <span>Steps<br /><small>from watch</small></span>
+        <span>Exercise cal<br /><small>MFP exercise log</small></span>
+      </div>
+      <div id="logBody"></div>
+    </div>
+
+    <button class="calc-btn" id="calcBtn">Calculate fat burned →</button>
+
+    <!-- ── Results ── -->
+    <div id="results">
+
+      <div class="section-label">Your results</div>
+
+      <div class="big-stat">
+        <div class="label">Fat burned this week (based on your deficit)</div>
+        <div class="num" id="bigNum">—</div>
+        <div class="sub" id="bigSub">—</div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card"><div class="l">Avg calories eaten</div><div class="v v-amber" id="avgIn">—</div></div>
+        <div class="stat-card"><div class="l">Avg calories burned</div><div class="v" id="avgOut">—</div></div>
+        <div class="stat-card"><div class="l">Avg daily deficit</div><div class="v" id="avgDef">—</div></div>
+        <div class="stat-card"><div class="l">Projected / month</div><div class="v v-green" id="monthFat">—</div></div>
+      </div>
+
+      <div class="noise-box">
+        <p>
+          <strong>The scale will lie to you.</strong>
+          Water retention, sodium, hormones, and inflammation can hide 3–5 lbs of real fat loss.
+          Your caloric deficit is the ground truth — if you're in the red, fat is being burned.
+          The scale catches up.
+        </p>
+      </div>
+
+      <div class="breakdown">
+        <div class="breakdown-title">How we got there</div>
+        <div id="breakdownRows"></div>
+      </div>
+
+      <div class="section-label">Projection</div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" id="p7btn">7 days</button>
+        <button class="toggle-btn"        id="p30btn">30 days</button>
+      </div>
+      <div class="proj-chart" id="projChart"></div>
+
+    </div><!-- /results -->
+
+  </div><!-- /container -->
+
+  <script type="module" src="src/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* variables.css
+   Design tokens. All other CSS files import from here.
+   Kept in one place so changing the palette touches one file. */
+
+:root {
+  --bg:         #0b0f1a;
+  --surface:    #111827;
+  --card:       #1a2235;
+  --border:     #1f2d45;
+  --green:      #00e676;
+  --green-dim:  #00b359;
+  --green-glow: rgba(0, 230, 118, 0.12);
+  --amber:      #ffb300;
+  --red:        #ff4d4d;
+  --text:       #e8edf5;
+  --muted:      #6b7a99;
+  --mono:       'JetBrains Mono', monospace;
+  --sans:       'Inter', sans-serif;
+
+  /* Semantic aliases used by components */
+  --color-surplus:  var(--red);
+  --color-deficit:  var(--green);
+  --color-warning:  var(--amber);
+}

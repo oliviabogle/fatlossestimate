@@ -1,0 +1,28 @@
+/* base.css
+   Reset and global element styles. No class names here. */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+@import './variables.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:  var(--bg);
+  color:       var(--text);
+  font-family: var(--sans);
+  min-height:  100vh;
+  padding-bottom: 80px;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--muted);
+}
+
+a:hover { color: var(--text); }

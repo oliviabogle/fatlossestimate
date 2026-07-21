@@ -4,9 +4,8 @@ Fun personal project
 
 # IYKYK 
 
-I have been tracking my meals in MyFitnessPal and weighing my foods by scale for the last year and a half along with keeping up with my steps/workouts on my Apple Watch. I have a bad habit of weighing myself every 1-2 days and getting furious when I see that I didn't drop 20 pounds overnight. Inflammation, water retention and gaining muscle can also make your scale checks less of a celebration. Seeing results motivates me but real fat loss is slow and takes tons of consistency and patience (that I don't have) 
+I have been using this calorie calculator with a plug in for myfitness pal calories & steps
 
-So I made this fat loss estimate tool to plug in mfp and my movement for when fat loss feels extra slow
+When dieting my body holds on to ton of water so I created this to rely on rather than the scale. After using it for 4 weeks: my scale was up 4-6 pounds for 4 weeks straight. According to this calculator tool I should have been down 5-6 pounds. Just when I started to question this calculator, I tried on jeans that were too tight to button and they buttoned. at 4 weeks and 1 day the scale showed that I was 6 pounds down. 
 
-
-
+Super cool tool for people that are driven crazy by the scale 

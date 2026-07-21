@@ -1,4 +1,4 @@
-# fat loss estimate for those who track their cals with MyFitnessPal & Apple watch steps/workouts
+# fat loss estimate tool for those who track their cals with MyFitnessPal & Apple watch steps/workouts
 
 Fun personal project 
 
